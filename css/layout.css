@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+
+.btn-circle {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.btn-circle.custom1 {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.btn-circle.custom2 {
+    line-height: 1.4;
+}
+
+.btn-circle.custom3 {
+    line-height: 1.6;
+    font-size: 10px;
+}
+
+.btn-custom {
+	background-color: #00A3DE;
+    border-color: #00A3DE;
+}
+
+.grey {
+	background-color: #f2f2f2;
+}
+
+.custom-font {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.custom-line-height {
+	line-height: 1.2;
+}
+
+input {
+	line-height: 1.2;
+}
+
+.small-size {
+	font-size: 12px;
+}
+
+.password-tip {
+	width: 100%;
+    margin-top: .2rem;
+    font-size: 70%;
+    color: #1b63c0;
+}
+
+.contact-benutzen-tip {
+	width: 100%;
+    margin-top: 1.5rem;
+    font-size: 80%;
+    color: #0bb72a;
+}

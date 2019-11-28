@@ -1,0 +1,275 @@
+body {
+  margin:0;
+  font-family: 'Verdana', sans-serif;
+}
+
+.bodytext {
+  font-size:16px;
+  font-weight:normal;
+}
+
+/* Navbar Bottom */
+.navbar_bottom {
+  overflow: hidden;
+  background-color: #FFF;
+  /*position: fixed;*/
+  margin-top:30px;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+  height:40px;
+}
+
+.navbar_bottom a {
+  font-size:16px;
+  color:#000;
+}
+
+.navbar_bottom a:hover {
+  text-decoration:underline;
+}
+
+.navbar_bottom a.active {
+  text-decoration:underline;
+}
+
+.navbar_bottom_link_left {
+  padding-right:10px;
+}
+
+.navbar_bottom_link_right {
+  padding-left:10px;
+}
+
+/* Move left bootstrap checkbox*/
+.move-left {
+  width: auto;
+     box-shadow: none;
+}
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto {
+  left: auto !important;
+  right: 0px;
+}
+
+#mySidenav img {
+  max-width:60%;
+}
+
+/* Slider Nav */
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #FFF; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-right:3px solid #43abe2;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    /*margin-bottom: 60px;*/
+}
+
+hr {
+  height: 4px;
+  width:100%;
+}
+
+.nav_backgroundImage {
+  background: #FFFFFF url('../img/logo_kinderland_plus_ggmbh.jpg') center no-repeat;
+}
+
+.nav_icons_right {
+  float:right;
+  max-width:70px;
+  width:70px;
+}
+
+/* Loginform */
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  /*border: 1px dashed deeppink;*/
+  background: #FFF;
+  border:1px solid #000;
+}
+
+.tt_news_img IMG {
+  max-width:150px;
+  height:auto;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+@media (max-width: 768px) {
+    .nav_backgroundImage {
+      background-size: 100px auto;
+    }
+
+    .navbar_bottom_link_left {
+      padding-right:2px;
+    }
+
+    .navbar_bottom_link_right {
+      padding-left:2px;
+    }
+
+    .nav_icons_right {
+        float:right;
+        max-width:60px;
+        width:60px;
+    }  
+}
+
+/* Wrapper Pagination */
+.ulWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Table Selection */
+.table_selection {
+    background-color: #28a745;
+    color: #FFF;
+}
+
+/* Modal
+.modal-dialog {
+    max-width: 100%;
+    width: auto !important;
+    display: inline-block;
+    margin:auto;
+} */
+
+/* Preloader */
+/* loader */
+#preloader {
+    background: #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#loaderInner {
+    background:#ffffff url(../img/spinner.gif) center center no-repeat;
+    height: 60px;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+}
+
+/* BUT Wizard */
+#but_step-2,
+#but_step-3,
+#but_step-4,
+#but_step-5,
+#but_step-6,
+#but_step-7,
+#but_step-8 {
+  display:none;
+}
+
+/*progressbar*/
+#but_progressstep {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    text-align:center;
+}
+
+#but_progressstep li {
+    list-style-type: none;
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 8px;
+    width: 12.5%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#but_progressstep li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #4d4d4d;
+    background: #cccccc;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#but_progressstep li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #28a745;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#but_progressstep li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#but_progressstep li.active:before, #progressstep li.active:after {
+    background: #28a745;
+    color: white;
+}
